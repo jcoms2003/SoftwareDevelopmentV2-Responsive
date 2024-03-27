@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FORM PAGE </title>
+    <link rel="stylesheet" type="text/css" href="MainStyleSD.css"> 
+    <link rel="icon" type="image/x-icon" href="homeicon.png">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <h1 class="center"> Welcome </h1>
+    </div>
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="MainPageSD.html"> Home </a>
+        <a href="TablePageSD.html"> Table </a>
+        <a class="active" href="FormPageSD.html"> Form </a>
+    </div>
+    <div id="theForm">
+        <form action="#data1" method="post">
+            <!-- First name -->
+            <label for="fname"> First Name </label> <br>
+            <input type="text" id="fname" name="fname" placeholder="First name..."> <br>
+            <!-- Last Name -->
+            <label for="lname"> Last Name </label> <br>
+            <input type="text" id="lname" name="lname" placeholder="Last name..."> <br>
+            <!-- Today's Date -->
+            <label for="today"> Today's Date </label> <br>
+            <input type="date" id="today" name="today"> <br>
+            <!-- actual time -->
+            <label for="ctime"> Current Time </label> <br>
+            <input type="time" id="ctime" name="ctime"> <br>
+            <!-- What is your favorite language -->
+            <label for="language"> What is your favorite language? </label> <br>
+            <select id="language" name="language">
+                <option value="python"> Python</option>
+                <option value="java"> Java </option>
+                <option value="C"> C </option>
+                <option value="javascript"> JavaScript </option>
+                <option value="css"> CSS </option>
+                <option value="html"> HTML </option>
+                <option value="php"> PHP </option>
+                <option value="other"> Other... </option>
+            </select> <br>
+            
+            <!-- Years practice -->
+            <label for="quantity"> How many years have you been coding? </label> <br>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" placeholder="1..."> <br>
+            <!-- Submit -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+   <!-- footer -->
+   <div class="footer">
+
+    <h3 id="egg5"> References </h3>
+        <p> 
+            <img style="border:0;width:88px;height:31px;float: right;"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" >
+            <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm#tab-1" target="_blank"> Software Developers </a> <br>
+            <a href="https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm" target="_blank"> Computer Hardware Engineers </a> <br>
+            <a href="https://alcor-bpo.com/13-facts-you-didnt-know-before-about-software-developers/" target="_blank"> 13 Facts About Software Developers </a>  <br>
+            <a href="https://www.computerscience.org/careers/software-developer/#:~:text=Software%20developers%20write%20code%20using,updates%2C%20and%20upgrades%20as%20needed." target="_blank"> What Is A Software Developer And What Do They Do? </a> <br>
+            <a href="https://resources.workable.com/software-developer-job-description" target="_blank"> Software Developers Job Description - Workable.com </a> <br>
+            <a href="https://www.indeed.com/hire/job-description/software-developer" target="_blank"> Software Developers Job Description - Indeed.com </a> <br>
+            <a href="https://sumatosoft.com/blog/different-types-of-software-developers-jobs-explained" target="_blank"> 18 Different Types Of Software Developer Jobs Explained </a> <br>
+        </p>
+</div>
+</body>
+</html>

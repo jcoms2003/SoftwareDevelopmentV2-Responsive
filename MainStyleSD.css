@@ -1,0 +1,209 @@
+/* Main Style for Desktop */
+/* universal */
+* {
+    box-sizing: border-box;
+}
+/* body style */
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: #e3dcd2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header sytle */
+.header {
+    padding: 20px;
+    background-color: #cc8b65;
+
+}
+/* Nav bar style */
+.navbar {
+    background-color: #013328;
+    position: sticky;
+}
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #f5f2ed;
+
+}
+.navbar a:hover:not(.active) {
+    background-color: #100c0d;
+}
+.active {
+    background-color: #100c0d;
+}
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* left column style */
+.leftCol {
+    float: left;
+    width: 75%;
+}
+/* right column */
+.rightCol {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+.card {
+    background-color: #cc8b65;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/* footer sytle */
+  .footer {
+    padding: 20px;
+    background: #cc8b65;
+    margin-top: 20px;
+}
+/* button style */
+button {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #013328;
+    background-color: #1e7b1e;
+}
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* table style */
+table {
+    display: block;
+    border-collapse: collapse;
+    width: 75%;
+    overflow-x: auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b8a994;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+th {
+    border: 1px solid #1e392a;
+    text-align: center;
+    padding: 10px;
+}
+td {
+    border: 1px solid #1e392a;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #e3dcd2;
+}
+/* stlye classes */
+.center {
+    text-align: center;
+}
+.indent {
+    text-indent: 50px;
+}
+/* image style */
+#img1 {
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+    border: 2px solid #013328;
+    border-radius: 15px;
+}
+#img2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border: 2px solid #013328;
+    border-radius: 10px;
+    object-fit: fill;
+}
+/* link styles */
+p a, dd a{
+    text-decoration: none;
+    color: #013328;
+}
+p a:hover, dd a:hover {
+    text-decoration: underline;
+    color: #100c0d;
+    font-size: 1.05em;
+}
+/* From style */
+#theForm {
+    border: 10px solid #100c0d;
+    border-radius: 15px;
+    margin-top: 15px;
+    max-width: 65%;
+    padding: 20px;
+    background-color: #cc8b65;
+    display: block;
+    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=text], select, input[type=date], input[type=number], input[type=time] {
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid #100c0d; 
+}
+
+        /* Form focus style change */
+        input[type=text]:focus {
+            background-color: #c4b5a1;
+        }
+        select:focus {
+            background-color: #c4b5a1;
+        }
+        input[type=date]:focus {
+            background-color: #c4b5a1;
+        }
+        input[type=number]:focus {
+            background-color: #c4b5a1;
+        }
+        input[type=time]:focus {
+            background-color: #c4b5a1;
+        }
+input[type=submit]{
+    border: 1px solid #100c0d;
+    border-radius: 15px;
+    color: #000000;
+    background-color: #1e7b1e;
+    margin: 5px;
+    padding: 5px;
+}
+input[type=submit]:hover {
+    background-color:  #0f3e0f;
+    color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input[type=reset] {
+    border: 1px solid #100c0d;
+    border-radius: 15px;
+    color: #000000;
+    background-color: #cc0000;
+    margin: 5px;
+    padding: 5px;
+}
+input[type=reset]:hover {
+    background-color: #660000;
+    color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Media quiries */
+@media screen and (max-width: 800px){
+    .leftCol, .middleCol, .rightCol {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}

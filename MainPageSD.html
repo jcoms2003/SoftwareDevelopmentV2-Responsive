@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HOME PAGE </title>
+    <link rel="stylesheet" type="text/css" href="MainStyleSD.css"> 
+    <link rel="icon" type="image/x-icon" href="homeicon.png">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <h1 class="center"> Welcome </h1>
+    </div>
+    <!-- navbar -->
+    <div class="navbar">
+        <a class="active" href="MainPageSD.html"> Home </a>
+        <a href="TablePageSD.html"> Table </a>
+        <a href="FormPageSD.html"> Form </a>
+    </div>
+    <!-- main content-->
+    <div class="row">
+        <div class="leftCol"> 
+            <div class="card">
+                <img id="img1" src="mainimg.png" alt="Software Image">
+                <h3 id="egg1" class="center"> What is software development? </h3>
+                <p class="indent"> Software development is a more complex way of saying you work with computer software. Software is all the code and action behind the scenes of every computer. 
+                    For example, software is what runs and displays your games, web browsers, smartphones, and medical devices. To break it down even more, you have specific software 
+                    that runs applications, operating systems, and calculations. So, basically, as a software engineer you will be working with computers daily. <br>
+                    Now that you have a basic understanding of what software is, lets get into the different types of specialties you can delve into…<br>
+                    Front-end developer, back-end developer, and full-stack developer. 
+                </p>
+            </div>
+            <div class="card">
+                <h3 id="egg2" class="center"> Front-end Developer </h3>
+                <p class="indent"> A front-end developer focuses on the creation and maintenance of websites. 
+                    Or, in other words, the part of the program the user sees. You will need to understand markup languages such as HTML and a basic understanding 
+                    of other languages. Working with a web browser and debugging tests are also a necessity. Overall, your job will be working on what the user will 
+                    see by maintaining it and keeping the speed as efficient as possible. 
+                </p>
+            </div>
+            <div class="card">
+                <h3 id="egg3" class="center"> Back-end Developer </h3>
+                <p class="indent"> As a back-end developer, you will work with what goes on behind the scenes. Programming languages that you should know include Python, C, Java, and Rust. 
+                    Understanding servers and how they run is also a skill that is required. In addition, having a basic understanding of front-end skills is essential. 
+                    This is necessary because you will be working regularly with the front-end and you need to know how your back-end code will affect the output of the webpage. 
+                </p>
+            </div>
+            <div class="card">
+                <h3 id="egg4" class="center"> Cyber Security Professional </h3>
+                <p class="indent"> 
+                    As a cyber security professional, you could work in two different areas. The first is known as the red team. Red team individuals work as professional hackers 
+                    that specialize in social engineering, penetration testing, card cloning, and making recommendations for blue team to make security improvements. Now, the blue 
+                    team is basically the opposite of the red team. They are the defensive line and protect against cyber-attacks. Blue team members specialize in digital forensics, 
+                    DNS audits, and installing and configuring firewalls and endpoint security software. Skills required for this type of job include a strong understanding of networking 
+                    and data flow within computer systems. Certifications that are also needed include CompTIA Security+ and a few others you can find at <a href="https://www.coursera.org/articles/red-team-vs-blue-team"> Coursera.org</a>.
+                </p>
+            </div>
+        </div>
+        <div class="rightCol">
+            <div class="card">
+                <h3 class="center"> Did you know... </h3>
+                <p> 
+                    Software development is a fast growing industry that is one of the highest paying jobs and does not even require a degree? 
+                    In fact, most entry software developers started by just playing with code which led to certification; and that is all you need to get started! 
+                </p>
+            </div>
+            <!-- image full space -->
+            <img id="img2" src="RefImg.png" alt="Software Image">
+            <div class="card">
+                <h3> Change Heading Color </h3>
+                <p> <button type="button" onclick="document.getElementById('egg1').style.color = '#ff0066'"> Click Me </button> 
+                    <button type="button" onclick="document.getElementById('egg2').style.color = '#ff6624'"> Click Me </button>
+                    <button type="button" onclick="document.getElementById('egg3').style.color = '#ff7596'"> Click Me </button>
+                    <button type="button" onclick="document.getElementById('egg4').style.color = '#ff22f4'"> Click Me </button>
+                    <button type="button" onclick="document.getElementById('egg5').style.color = '#ff7660'"> Click Me </button>
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="center"> Helpful Links</h3>
+                <dl>
+                    <dt> Studies</dt>
+                        <dd> <a href="https://www.w3schools.com/">W3Schools</a> </dd>
+                        <dd> <a href="https://github.com/">GitHub</a> </dd>
+                        <dd> <a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a> </dd>
+                    <dt> Jobs </dt>
+                        <dd> <a href="https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm"> Computer Hardware </a></dd>
+                        <dd> <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm#tab-1"> Information Technology </a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+
+        <h3 id="egg5"> References </h3>
+            <p> 
+                <img style="border:0;width:88px;height:31px;float: right;"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" >
+                <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm#tab-1" target="_blank"> Software Developers </a> <br>
+                <a href="https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm" target="_blank"> Computer Hardware Engineers </a> <br>
+                <a href="https://alcor-bpo.com/13-facts-you-didnt-know-before-about-software-developers/" target="_blank"> 13 Facts About Software Developers </a>  <br>
+                <a href="https://www.computerscience.org/careers/software-developer/#:~:text=Software%20developers%20write%20code%20using,updates%2C%20and%20upgrades%20as%20needed." target="_blank"> What Is A Software Developer And What Do They Do? </a> <br>
+                <a href="https://resources.workable.com/software-developer-job-description" target="_blank"> Software Developers Job Description - Workable.com </a> <br>
+                <a href="https://www.indeed.com/hire/job-description/software-developer" target="_blank"> Software Developers Job Description - Indeed.com </a> <br>
+                <a href="https://sumatosoft.com/blog/different-types-of-software-developers-jobs-explained" target="_blank"> 18 Different Types Of Software Developer Jobs Explained </a> <br>
+            </p>
+    </div>
+</body>
+</html>
